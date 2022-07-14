@@ -1,211 +1,205 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #272829;
-  }
-  
-  a:hover {
-    color: #283C57;
-    text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .bg-main{
-    color: #F5E2B0;
-  }
-
-  .bg-brown{
-    color: #C54846
-  }
-
-  .text-red{
-    color: #D71A38;
-  }
-
-  .bg-about{
-    color: #283c57;
-  }
-
-
-  .bg-skills{
-    color: #C54846;
-  }
-
-  root {
-    --blue: #283C57;
-    --red: #D71A38;
-    --nude: #F5E2B0;
-    --brown: #C54846;
-
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #1abc9c;
-    --secondary: #393D5C;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #283C57;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-  }
-
-  html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-
-  body {
-    margin: 0;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    color: #C54846;
-    line-height: 1.5;
-    text-align: left;
-    background-color: #F5E2B0;
-  }
-
-nav{
-    height: 80px;
-    width: 100;
-    background: #C54846;
-    color:  #F5E2B0;
-    }
-
-  #nav-opt:hover{
-text-decoration: underline;
-    }
-
-  #navbarNav:hover{
-    text-decoration: #283c57;
-  }
-
-  #main{
-    padding-top: 175px;
-    color: #F5E2B0;
-    padding-bottom: 0px;
-   }
-
-   #red-flower {
-  float: left;
-  }
- 
-  #about{
-    padding-top: 80px;
-    background-color: #283C57;
-    padding-bottom: 50px;
-  }
-  
-  #img2{
-    float: left;
-  }
-
-  #img3{
-    float: right;
-  }
-
-  #fflower{
-    float: center;
-  }
-
-  #skills{
-    padding: 80px;
-    color: #F5E2B0;
-    background-color: #F5E2B0;
-  }
-
-  #blue-flower {
-    float: right;
-  }
-
-  #card{
-    background-color: #Fff;
-  }
-   
-  #projects{
-      margin-top: 80px;
-      color: #F5E2B0;
-      background-color: #F5E2B0;
-      margin-bottom: 0px;
-      
-  }
-
-  #portfolio{
-    padding-top: 100px;;
-    color: #F5E2B0;
-    background-color: #F5E2B0;
-    padding-bottom: 0px;
-    
+  font-family: 'Montserrat', sans-serif;
+  color: #272829;
 }
 
-  #figma{
-    padding-top: 10px;;
-    color: #283C57;
-    background-color: #283C57; 
-    padding-bottom: 50px
-     }
-
-  #languages{
-    padding: 100px;
-    color: #283C57;
-    background-color: #283C57;}
-
-  
-  #album{
-    padding-top: 0px;
-    background-color: #F5E2B0;
-    padding-bottom: 100px;
-  }
-
-  #album-portfolio{
-    padding: 0px;
-    color: #F5E2B0;
-    background-color: #F5E2B0;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -1.5rem;
-    margin-left: -1.5rem;
-  }
-
-
-  
-   footer {
-    padding-top: 15px;
-    padding-bottom: 0;
-    background-color: #C54846;
-    color: #F5E2B0;
-  }
-
-  #last-pic{
-    float: middle;
-  }
-
-  #copyright{
-    padding-top: 0px;
-    background-color: #C54846;
-    padding-bottom: 15px;
-  }
-
-  .footer {
-    padding-top: 50px;
-    padding-bottom: 0;
-    color: #F5E2B0;
-      
-}
-
-#icons1{
+a:hover {
+  color: #283C57;
   text-decoration: none;
-} 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-main {
+  color: #F5E2B0;
+}
+
+.bg-brown {
+  color: #C54846
+}
+
+.color-red {
+  color: #D71A38;
+}
+
+.bg-darkblue {
+  color: #283c57;
+}
+
+root {
+  --blue: #283C57;
+  --red: #D71A38;
+  --nude: #F5E2B0;
+  --brown: #C54846;
+
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #C54846;
+  line-height: 1.5;
+  text-align: left;
+  background-color: #F5E2B0;
+}
+
+nav {
+  height: 80px;
+  width: 100;
+  background: #C54846;
+  color: #F5E2B0;
+}
+
+#nav-opt:hover {
+  text-decoration: underline;
+}
+
+#navbarNav:hover {
+  text-decoration: #283c57;
+}
+
+#main {
+  padding-top: 175px;
+  color: #F5E2B0;
+  padding-bottom: 0px;
+}
+
+#red-flower {
+  float: left;
+}
+
+#about {
+  padding-top: 80px;
+  background-color: #283C57;
+  padding-bottom: 50px;
+}
+
+#img2 {
+  float: left;
+}
+
+#img3 {
+  float: right;
+}
+
+#fflower {
+  float: center;
+}
+
+#skills {
+  padding: 80px;
+  color: #F5E2B0;
+  background-color: #F5E2B0;
+}
+
+#blue-flower {
+  float: right;
+}
+
+#card {
+  background-color: #Fff;
+}
+
+#projects {
+  margin-top: 80px;
+  color: #F5E2B0;
+  background-color: #F5E2B0;
+  margin-bottom: 0px;
+
+}
+
+#portfolio {
+  padding-top: 100px;
+  ;
+  color: #F5E2B0;
+  background-color: #F5E2B0;
+  padding-bottom: 0px;
+
+}
+
+#figma {
+  padding-top: 10px;
+  ;
+  color: #283C57;
+  background-color: #283C57;
+  padding-bottom: 50px
+}
+
+#languages {
+  padding: 100px;
+  color: #283C57;
+  background-color: #283C57;
+}
+
+
+#album {
+  padding-top: 0px;
+  background-color: #F5E2B0;
+  padding-bottom: 100px;
+}
+
+#album-portfolio {
+  padding: 0px;
+  color: #F5E2B0;
+  background-color: #F5E2B0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+
+
+footer {
+  padding-top: 15px;
+  padding-bottom: 0;
+  background-color: #C54846;
+  color: #F5E2B0;
+}
+
+#last-pic {
+  float: middle;
+}
+
+#copyright {
+  padding-top: 0px;
+  background-color: #C54846;
+  padding-bottom: 15px;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 0;
+  color: #F5E2B0;
+
+}
+
+#icons1 {
+  text-decoration: none;
+}
 
 .fa-phone {
   background: null;
@@ -219,19 +213,19 @@ text-decoration: underline;
   text-decoration: none;
 }
 
-.fa-phone:hover{
+.fa-phone:hover {
   text-decoration: #F5E2B0;
 }
 
-.fa-envelope:hover{
+.fa-envelope:hover {
   text-decoration: #F5E2B0;
 }
 
-#icons2{
+#icons2 {
   text-decoration: none;
 }
 
-#links{
+#links {
   text-decoration: none;
 }
 
