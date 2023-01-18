@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run index.php
+web:sh setup.sh && streamlit run index.php
