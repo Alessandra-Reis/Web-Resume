@@ -3,8 +3,6 @@ body {
   background-color: #C54846;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -16,6 +14,36 @@ h6 {
 
 h1, h2, h3 {
   font-variant: small-caps;
+}
+
+.navbar {
+  background: #C54846;
+  color: #F5E2B0;
+}
+
+#nav-opt:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav {
+  position: relative;
+}
+
+.navbar-nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(197, 72, 70, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.navbar-collapse.show .navbar-nav::after {
+  opacity: 1;
 }
 
 a:hover {
@@ -74,20 +102,7 @@ body {
   background-color: #F5E2B0;
 }
 
-nav {
-  /* height: 80px;
-  width: 100; */
-  background: #C54846;
-  color: #F5E2B0;
-}
 
-#nav-opt:hover {
-  text-decoration: underline;
-}
-
-/* #navbarNav:hover {
-  text-decoration: #283c57;
-} */
 
 #main {
   padding-top: 175px;
@@ -262,6 +277,10 @@ footer {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+#copyright{
+  text-align: center;
 }
 
 @media (min-width: 768px) {
