@@ -20,6 +20,16 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Bootstrap JavaScript (Popper.js and jQuery are required dependencies) -->   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,11 +41,15 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/style.css" rel="stylesheet">
     <link href="cover.css" rel="stylesheet">
+
+
+
 
 </head>
 
@@ -48,45 +62,41 @@
 
     <!--NAVBAR-->
 
-    <nav class="navbar  fixed-top navbar-expand-lg navbar-dark p-md-3">
-
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
             <a class="navbar-brand" href="#">WEB RESUME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-opt" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" id="nav-opt" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" id="nav-opt" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" id="nav-opt" href="#languages">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" id="nav-opt" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" id="nav-opt" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" id="nav-opt" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mx-auto"></div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" id="nav-opt" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" id="nav-opt" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" id="nav-opt" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" id="nav-opt" href="#languages">Languages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" id="nav-opt" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" id="nav-opt" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" id="nav-opt" href="#footer">Contact</a>
-                </li>
-            </ul>
-        </div>
-
     </nav>
+
 
     <!--HOME PAGE-->
 
@@ -103,10 +113,10 @@
             <main class="px-3">
                 <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
                     <div class="content text-center">
-                        <img id="mypic" class="d-block mx-auto mb-4" src="img/Profile.svg" alt="Alessandra's picture" width="300"
-                            height="300">
+                        <img id="mypic" class="d-block mx-auto mb-4" src="img/Profile.svg" alt="Alessandra's picture"
+                            width="300" height="300">
                         <h1 class="bg-brown">Alessandra Reis</h1>
-                        <p class="bg-brown"> &starf; Designer &starf; Graphic Artist &starf; Illustrator &starf;</p>                        
+                        <p class="bg-brown"> &starf; Designer &starf; Graphic Artist &starf; Illustrator &starf;</p>
                         <img class="d-block mx-auto mb-4" src="img/mainflower1.svg" alt="" width="100" height="100">
                     </div>
                 </div>
@@ -138,12 +148,13 @@
                 &diams; <br>
                 <!-- Graduated in Events Management and in Travel Management Course / S&atilde;o Paulo and South America Tour Guide<br>
                 &diams; <br> -->
-                <br> Until now, my professional journey has revolved around the vibrant domains of tourism and hospitality, <br> 
-                allowing me to develop a strong skill set in these areas. <br> 
-                Additionally, my previous role provided me with invaluable experience in the food and beverage industry. <br>
-                However, I am currently pursuing a transition into the technology field, and my primary focus lies in honing my graphic design skills. <br><br>
+                <br> Until now, my professional journey has revolved around the vibrant domains of tourism and
+                hospitality, <br>
+                and my previous role provided me with invaluable experience in the food and beverage industry. <br>
+                However, I am currently pursuing a transition into the technology field, and my primary focus lies in
+                honing my graphic design skills. <br><br>
                 &diams; <br>
-                 <br>
+                <br>
                 <br>
 
                 <!-- About Section Button-->
