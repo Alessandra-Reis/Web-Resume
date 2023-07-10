@@ -1,12 +1,9 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #272829;
+  background-color: #C54846;
 }
 
-a:hover {
-  color: #283C57;
-  text-decoration: none;
-}
+
 
 h1,
 h2,
@@ -15,6 +12,15 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+  font-variant: small-caps;
+}
+
+a:hover {
+  color: #283C57;
+  text-decoration: none;
 }
 
 #mypic {
