@@ -121,8 +121,8 @@ h1, h2, h3 {
 
 #grid-figma {
   display: grid;
-  grid-template-columns: 50% 50%;  
-  width: 80%;
+  grid-template-columns: 45% 10% 45%;  
+  width: 90%;
   margin: 0 auto;  
 }
 
