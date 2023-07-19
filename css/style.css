@@ -320,9 +320,14 @@ root {
 /* PROJECTS SECTION */
 /* **************** */
 
+#projects{
+  padding-bottom: 25px;
+}
+
 #grid-projects {
   display: grid;  
   grid-template-columns: 15% 70% 15%;
+  height: auto;
   width: 70%;
   margin: 0 auto; 
    
@@ -341,7 +346,7 @@ root {
 /* ****** */
 
 #footer {
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 0;
   background-color: #C54846;
   color: #F5E2B0;
