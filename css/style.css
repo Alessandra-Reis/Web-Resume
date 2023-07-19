@@ -36,6 +36,7 @@ root {
   --red: #D71A38;
   --nude: #F5E2B0;
   --brown: #C54846;
+ 
 
   --white: #fff;
   --gray: #6c757d;
@@ -78,7 +79,19 @@ root {
   padding-bottom: 50px;
 }
 
+.title-marker1{
+  padding-top: 30px; 
+  padding-bottom: 0px;
+}
+
+.title-marker2{
+  padding-top: 50px; 
+  padding-bottom: 0px;
+}
+
 /* ********************* */
+
+
 
 /* ******************************************** */
 /* BUTTON SETTINGS FOR ABOUT & FIGMA PROTOTYPES */
@@ -186,7 +199,31 @@ root {
   margin: 0 auto;
   word-wrap: break-word;
   padding: 20px;
+}
 
+#grid-container {
+  display: grid;  
+  grid-template-columns: 5% 90% 5%;
+  width: 100%;
+  margin: 0 auto;  
+}
+
+#grid-container > div {  
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.to-hide{
+  visibility: hidden;
+}
+
+#img2 {
+  float: left;
+}
+
+#img3 {
+  float: right;
 }
 
 /* ************* */
@@ -197,6 +234,10 @@ root {
 
 #blue-flower {
   float: right;
+}
+
+#skills{
+  padding-bottom: 100px;
 }
 
 /* ************** */
@@ -211,13 +252,32 @@ root {
   min-height: 500px;
 }
 
+#red-flower {
+  float: left;
+}
+
 /* ***************** */
 
 /* ***************** */
 /* PORTFOLIO SECTION */
 /* ***************** */
 
+#grid-portfolio {
+  display: grid;  
+  grid-template-columns: 10% 80% 10%;
+  width: 80%;
+  margin: 0 auto;  
+}
 
+#grid-portfolio > div {  
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#fflower {
+  float: center;
+}
 
 /* ***************** */
 
@@ -241,36 +301,6 @@ root {
   padding: 20px;
 }
 
-/* ************* */
-
-/*  */
-
-#grid-container {
-  display: grid;  
-  grid-template-columns: 5% 90% 5%;
-  width: 100%;
-  margin: 0 auto;  
-}
-
-#grid-container > div {  
-  border: none;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-#grid-portfolio {
-  display: grid;  
-  grid-template-columns: 10% 80% 10%;
-  width: 80%;
-  margin: 0 auto;  
-}
-
-#grid-portfolio > div {  
-  border: none;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 #grid-figma {
   display: grid;
   grid-template-columns: 45% 10% 45%;  
@@ -284,10 +314,16 @@ root {
   text-align: center;
 }
 
+/* ************* */
+
+/* **************** */
+/* PROJECTS SECTION */
+/* **************** */
+
 #grid-projects {
   display: grid;  
-  grid-template-columns: 20% 60% 20%;
-  width: 50%;
+  grid-template-columns: 15% 70% 15%;
+  width: 70%;
   margin: 0 auto; 
    
 }
@@ -298,46 +334,11 @@ root {
   text-align: center;
 }
 
-.to-hide{
-  visibility: hidden;
-}
+/* **************** */
 
-
-/* ************************************************************** */
-
-.color-red {
-  color: #D71A38;
-}
-
-
-#red-flower {
-  float: left;
-}
-
-
-
-#img2 {
-  float: left;
-}
-
-#img3 {
-  float: right;
-}
-
-#fflower {
-  float: center;
-}
-
-
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -1.5rem;
-  margin-left: -1.5rem;
-}
-
-
+/* ****** */
+/* FOOTER */
+/* ****** */
 
 #footer {
   padding-top: 50px;
@@ -346,31 +347,13 @@ root {
   color: #F5E2B0;
 }
 
-#last-pic {
-  float: middle;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
 }
 
-#copyright {
-  padding-top: 0px;
-  background-color: #C54846;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-/* .footer {
-  padding-top: 50px;
-  padding-bottom: 0;
-  color: #F5E2B0;
-  background-color: #C54846;
-
-} */
-
-.icons1 {
-  color:#F5E2B0  
-}
-.icons1:hover{
-  text-decoration: #283C57;
-}
 
 .fa-phone {
   background: null;
@@ -416,6 +399,24 @@ root {
   text-decoration: none;
 }
 
+#last-pic {
+  float: middle;
+}
+
+#copyright {
+  padding-top: 0px;
+  background-color: #C54846;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* ****** */
+
+
+/* ************************************************************** */
+/* ************************************************************** */
+/* ************************************************************** */
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -423,7 +424,6 @@ root {
   -moz-user-select: none;
   user-select: none;
 }
-
 
 
 @media (min-width: 768px) {
