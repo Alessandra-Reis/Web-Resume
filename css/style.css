@@ -1,7 +1,22 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #C54846;
+/* **************** */
+/* GENERAL SETTINGS */
+/* **************** */
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+body {
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  }
 
 h1,
 h2,
@@ -15,6 +30,100 @@ h6 {
 h1, h2, h3 {
   font-variant: small-caps;
 }
+
+root {
+  --blue: #283C57;
+  --red: #D71A38;
+  --nude: #F5E2B0;
+  --brown: #C54846;
+
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+}
+/* **************** */
+
+/* ********************* */
+/* BACKGROUND COLOR SETS */
+/* ********************* */
+
+.bg-beige-blue {
+  background-color: #F5E2B0;
+  color:#283C57
+}
+
+.bg-blue-beige {
+  background-color: #283C57;
+  color:#F5E2B0;
+}
+
+.bg-beige-brown {
+  background-color: #F5E2B0;
+  color:#C54846;
+}
+
+.bg-brown-beige {
+  background-color: #C54846;
+  color: #F5E2B0;
+}
+
+/* ********************* */
+
+/* *********************** */
+/* GENERAL PADDING SETTING */
+/* *********************** */
+
+.general-padding{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* ********************* */
+
+/* ******************************************** */
+/* BUTTON SETTINGS FOR ABOUT & FIGMA PROTOTYPES */
+/* ******************************************** */
+
+.btn {
+  border-color: #F5E2B0; 
+  color: #F5E2B0;
+}
+
+.btn:hover {
+  color:#283C57;
+  background-color: #F5E2B0;
+  text-decoration: #283C57;
+
+}
+
+/* ******************************************** */
+
+/* ******************************************* */
+/* CAROUSEL SETTING FOR PORTFOLIO AND PROJECTS */
+/* ******************************************* */
+
+#secondCarousel, #firstCarousel{
+  margin-bottom: 50px;
+}
+
+.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+    color: #283C57;
+  }
+
+  .carousel-control-prev-icon{
+    margin-left: 80px;
+  }
+  .carousel-control-next-icon{
+    margin-right: 80px;
+  }
+
+  /* ******************************************* */
+
+/* ******* */
+/* NAV BAR */
+/* ******* */
 
 .navbar {
   background: #C54846;
@@ -46,12 +155,22 @@ h1, h2, h3 {
   opacity: 1;
 }
 
-#about {
-  padding-top: 80px;
-  background-color: #283C57;
-  color: #F5E2B0;
-  padding-bottom: 50px;
+/* ******* */
+
+/* ********* */
+/* HOME PAGE */
+/* ********* */
+
+#mypic {
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
+
+/* ********* */
+
+/* ************* */
+/* ABOUT SECTION */
+/* ************* */
 
 #about-box {
 
@@ -62,13 +181,49 @@ h1, h2, h3 {
   border-style: solid;
   border-left: 0px;
   border-width: 3px;
-  border-radius: 0px;
+  border-radius: 15px;
   border-color: #F5E2B0;  
   margin: 0 auto;
   word-wrap: break-word;
   padding: 20px;
 
 }
+
+/* ************* */
+
+/* ************** */
+/* SKILLS SECTION */
+/* ************** */
+
+#blue-flower {
+  float: right;
+}
+
+/* ************** */
+
+/* ***************** */
+/* LANGUAGES SECTION */
+/* ***************** */
+
+#languages {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  min-height: 500px;
+}
+
+/* ***************** */
+
+/* ***************** */
+/* PORTFOLIO SECTION */
+/* ***************** */
+
+
+
+/* ***************** */
+
+/* ************* */
+/* FIGMA SECTION */
+/* ************* */
 
 #figma-box {
 
@@ -79,19 +234,16 @@ h1, h2, h3 {
   border-style: solid;
   border-right: 0px;
   border-width: 3px;
-  border-radius: 0px;
+  border-radius: 15px;
   border-color: #F5E2B0;  
   margin: 0 auto;
   word-wrap: break-word;
   padding: 20px;
-
 }
 
-/* PORTFOLIO PAGE */
+/* ************* */
 
-#port-page{
-  background-color: white;
-}
+/*  */
 
 #grid-container {
   display: grid;  
@@ -150,112 +302,13 @@ h1, h2, h3 {
   visibility: hidden;
 }
 
-#secondCarousel, #firstCarousel{
-  margin-bottom: 50px;
-}
 
-.carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    filter: invert(100%);
-    color: #283C57;
-  }
-
-  .carousel-control-prev-icon{
-    margin-left: 80px;
-  }
-  .carousel-control-next-icon{
-    margin-right: 80px;
-  }
-
- 
-/* ************************************************************* */
-
-
-
-
-
-/* a:hover {
-  color: #283C57;
-  text-decoration: none;
-} */
-
-.btn {
-  border-color: #F5E2B0; 
-  color: #F5E2B0;
-}
-
-.btn:hover {
-  color:#283C57;
-  background-color: #F5E2B0;
-  text-decoration: #283C57;
-
-}
-
-#mypic {
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
-
-.bg-main2 {
-  background-color: #F5E2B0;
-  color:#283C57
-}
-
-.bg-main1 {
-  background-color: #F5E2B0;
-  color:#C54846;
-}
-
-.bg-brown {
-  background-color: #C54846;
-  color: #F5E2B0;
-}
+/* ************************************************************** */
 
 .color-red {
   color: #D71A38;
 }
 
-.bg-darkblue {
-  color: #283C57;
-}
-
-root {
-  --blue: #283C57;
-  --red: #D71A38;
-  --nude: #F5E2B0;
-  --brown: #C54846;
-
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-
-}
-
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body {
-  margin: 0;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  color: #C54846;
-  line-height: 1.5;
-  text-align: left;
-  background-color: #F5E2B0;
-}
-
-
-
-#main {
-  padding-top: 175px;
-  color: #F5E2B0;
-  padding-bottom: 0px;
-}
 
 #red-flower {
   float: left;
@@ -275,67 +328,7 @@ body {
   float: center;
 }
 
-#skills {
-  padding: 80px;
-  color: #C54846;
-  background-color: #F5E2B0;
-}
 
-#blue-flower {
-  float: right;
-}
-
-.card {
-  background-color: #Fff;
-}
-
-#projects {
-  margin-top: 50px;
-  color: #F5E2B0;
-  background-color: #F5E2B0;
-  margin-bottom: 0px;
-
-}
-
-#portfolio {
-  padding-top: 50px;
-  ;
-  color: #F5E2B0;
-  background-color: #F5E2B0;
-  padding-bottom: 0px;
-
-}
-
-#figma {
-  padding-top: 50px;
-  color: #F5E2B0;
-  background-color: #283C57;
-  padding-bottom: 50px
-}
-
-#languages {
-  padding: 100px;
-  color: #F5E2B0;
-  background-color: #283C57;
-}
-
-
-#album {
-  padding-top: 0px;
-  background-color: #F5E2B0;
-  padding-bottom: 100px;
-}
-
-#album-portfolio {
-  padding: 0px;
-  color: #F5E2B0;
-  background-color: #F5E2B0;
-}
-
-.button{
-  background-color: #283C57;
-  color: #F5E2B0;
-}
 
 .row {
   display: flex;
