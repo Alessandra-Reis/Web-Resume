@@ -68,6 +68,16 @@ root {
   color: #F5E2B0;
 }
 
+.bg-red-pink {
+  background-color: #C54846;
+  color: #E48E8C;
+}
+
+.bg-pink-red {
+  background-color: #E48E8C;
+  color: #C54846;
+}
+
 /* ********************* */
 
 /* *********************** */
