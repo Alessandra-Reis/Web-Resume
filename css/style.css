@@ -178,6 +178,12 @@ root {
   opacity: 1;
 }
 
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem;
+  }
+}
+
 /* ******* */
 
 /* ********* */
