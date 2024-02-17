@@ -178,11 +178,25 @@ root {
   opacity: 1;
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .navbar-collapse {
     padding: 1rem;
   }
-}
+} */
+
+
+@media (max-width: 991.98px) { /* Remove fixed position for smaller screens */
+  .navbar {
+    position: relative; 
+  }
+
+  .navbar-collapse { 
+    padding: 1rem;
+  }
+} 
+
+
+
 
 /* ******* */
 
