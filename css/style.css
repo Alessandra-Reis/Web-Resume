@@ -129,8 +129,8 @@ root {
 /* CAROUSEL SETTING FOR PORTFOLIO AND PROJECTS */
 /* ******************************************* */
 
-#secondCarousel,
-#firstCarousel {
+ 
+.figmaCarousel .supportingCarousel .adobeCarousel .cactusCarousel .tuegCarousel {
   margin-bottom: 50px;
 }
 
@@ -325,11 +325,11 @@ root {
 /* PROJECTS SECTION */
 /* **************** */
 
-#projects {
+#supporting {
   padding-bottom: 25px;
 }
 
-#grid-projects {
+#grid-supporting {
   display: grid;
   grid-template-columns: 15% 70% 15%;
   height: auto;
@@ -338,7 +338,7 @@ root {
 
 }
 
-#grid-projects>div {
+#grid-supporting>div {
   border: none;
   box-sizing: border-box;
   text-align: center;
@@ -834,7 +834,18 @@ root {
 /* ADOBE */
 /* ***** */
 
+#grid-adobe {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  width: 90%;
+  margin: 0 auto;
+}
 
+#grid-adobe>div {
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+}
 
 /* ****** */
 /* FOOTER */
