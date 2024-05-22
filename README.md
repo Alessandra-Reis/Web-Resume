@@ -1,11 +1,8 @@
-ALESSANDRA SILVA DOS REIS – 21565
-
-FRONT-END WEB DEVELOPMENT
-CONTINUOUS ASSESSMENT 3
+ALESSANDRA SILVA DOS REIS
 
 MY WEB RESUME
 
-https://alessandra-reis.herokuapp.com/ 
+https://alessandra-reis.netlify.app/
 
 OBJECTIVE:
 
