@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
-  }
+}
 
 h1,
 h2,
@@ -27,7 +27,9 @@ h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-variant: small-caps;
 }
 
@@ -36,12 +38,13 @@ root {
   --red: #D71A38;
   --nude: #F5E2B0;
   --brown: #C54846;
- 
+
 
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
 }
+
 /* **************** */
 
 /* ********************* */
@@ -50,17 +53,17 @@ root {
 
 .bg-beige-blue {
   background-color: #F5E2B0;
-  color:#283C57
+  color: #283C57
 }
 
 .bg-blue-beige {
   background-color: #283C57;
-  color:#F5E2B0;
+  color: #F5E2B0;
 }
 
 .bg-beige-brown {
   background-color: #F5E2B0;
-  color:#C54846;
+  color: #C54846;
 }
 
 .bg-brown-beige {
@@ -84,18 +87,18 @@ root {
 /* GENERAL PADDING SETTING */
 /* *********************** */
 
-.general-padding{
+.general-padding {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.title-marker1{
-  padding-top: 30px; 
+.title-marker1 {
+  padding-top: 30px;
   padding-bottom: 0px;
 }
 
-.title-marker2{
-  padding-top: 50px; 
+.title-marker2 {
+  padding-top: 50px;
   padding-bottom: 0px;
 }
 
@@ -108,12 +111,13 @@ root {
 /* ******************************************** */
 
 .btn {
-  border-color: #F5E2B0; 
+  border-color: #F5E2B0;
   color: #F5E2B0;
+  font-variant: small-caps;
 }
 
 .btn:hover {
-  color:#283C57;
+  color: #283C57;
   background-color: #F5E2B0;
   text-decoration: #283C57;
 
@@ -125,24 +129,26 @@ root {
 /* CAROUSEL SETTING FOR PORTFOLIO AND PROJECTS */
 /* ******************************************* */
 
-#secondCarousel, #firstCarousel{
+#secondCarousel,
+#firstCarousel {
   margin-bottom: 50px;
 }
 
 .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    filter: invert(100%);
-    color: #283C57;
-  }
+.carousel-control-next-icon {
+  filter: invert(100%);
+  color: #283C57;
+}
 
-  .carousel-control-prev-icon{
-    margin-left: 80px;
-  }
-  .carousel-control-next-icon{
-    margin-right: 80px;
-  }
+.carousel-control-prev-icon {
+  margin-left: 80px;
+}
 
-  /* ******************************************* */
+.carousel-control-next-icon {
+  margin-right: 80px;
+}
+
+/* ******************************************* */
 
 /* ******* */
 /* NAV BAR */
@@ -151,6 +157,7 @@ root {
 .navbar {
   background: #C54846;
   color: #F5E2B0;
+  font-variant: small-caps;
 }
 
 .nav-link:hover {
@@ -185,15 +192,17 @@ root {
 } */
 
 
-@media (max-width: 991.98px) { /* Remove fixed position for smaller screens */
+@media (max-width: 991.98px) {
+
+  /* Remove fixed position for smaller screens */
   .navbar {
-    position: relative; 
+    position: relative;
   }
 
-  .navbar-collapse { 
+  .navbar-collapse {
     padding: 1rem;
   }
-} 
+}
 
 
 
@@ -209,7 +218,7 @@ root {
   margin-bottom: 20px;
 }
 
-#mflower{
+#mflower {
   margin-top: 20px;
 }
 
@@ -221,15 +230,15 @@ root {
 
 #about-box {
 
-  background-color: #283C57 ;
+  background-color: #283C57;
   text-align: center;
-  height: 270px;
-  width: 510px;
+  height: 430px;
+  width: 100%;
   border-style: solid;
   border-left: 0px;
   border-width: 3px;
   border-radius: 15px;
-  border-color: #F5E2B0;  
+  border-color: #F5E2B0;
   margin: 0 auto;
   word-wrap: break-word;
   padding: 20px;
@@ -245,24 +254,34 @@ root {
 }
 
 #grid-container {
-  display: grid;  
+  display: grid;
   grid-template-columns: 5% 90% 5%;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
-#grid-container > div {  
+#grid-container>div {
   border: none;
   box-sizing: border-box;
   text-align: center;
 }
 
-.to-hide{
+.to-hide {
   visibility: hidden;
 }
 
-#img2 {
+#beige-flower {
   float: left;
+}
+
+@media (max-width: 767.98px) {
+  #beige-flower {
+    position: relative;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
 }
 
 #img3 {
@@ -277,9 +296,10 @@ root {
 
 #blue-flower {
   float: right;
+  padding-top: 5%;
 }
 
-#skills{
+#skills {
   padding-bottom: 100px;
 }
 
@@ -301,109 +321,24 @@ root {
 
 /* ***************** */
 
-/* ***************** */
-/* PORTFOLIO SECTION */
-/* ***************** */
-
-#grid-portfolio {
-  display: grid;  
-  grid-template-columns: 10% 80% 10%;
-  width: 80%;
-  margin: 0 auto;  
-}
-
-#grid-portfolio > div {  
-  border: none;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-#fflower {
-  float: center;
-}
-
-
-/* ***************** */
-
-/* ************* */
-/* FIGMA SECTION */
-/* ************* */
-
-#figma-box {
-
-  background-color: #283C57 ;
-  text-align: center;
-  height: 280px;
-  width: 900px;
-  border-style: solid;
-  border-right: 0px;
-  border-width: 3px;
-  border-radius: 15px;
-  border-color: #F5E2B0;  
-  margin: 0 auto;
-  word-wrap: break-word;
-  padding: 20px;
-  max-width: 900px;
-
-  position: relative; /* Add relative positioning to create a reference for the absolute positioning of the line */
-}
-
-/* Add a vertical line for all screens */
-#figma-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;  
-  margin-top: 40px;
-  margin-bottom: 20px;
-  left: 50%; /* Position the line in the center horizontally */
-  border-left: 0.02px solid #F5E2B0; /* Add a left border as a vertical line */
-  opacity: 90%;
-  transform: translateX(-50%); /* Adjust for centering */
-}
-
-@media (max-width: 991.98px) {
-  #figma-box {
-    max-width: 100%;
-    height: auto;
-  }
-  
-}
-
-
-#grid-figma {
-  display: grid;
-  grid-template-columns: 45% 10% 45%;  
-  width: 90%;
-  margin: 0 auto;  
-}
-
-#grid-figma > div {  
-  border: none;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-/* ************* */
-
 /* **************** */
 /* PROJECTS SECTION */
 /* **************** */
 
-#projects{
+#projects {
   padding-bottom: 25px;
 }
 
 #grid-projects {
-  display: grid;  
+  display: grid;
   grid-template-columns: 15% 70% 15%;
   height: auto;
   width: 70%;
-  margin: 0 auto; 
-   
+  margin: 0 auto;
+
 }
 
-#grid-projects > div {  
+#grid-projects>div {
   border: none;
   box-sizing: border-box;
   text-align: center;
@@ -429,7 +364,6 @@ root {
   margin-left: -1.5rem;
 }
 
-
 .fa-phone {
   background: null;
   color: #F5E2B0;
@@ -454,7 +388,8 @@ root {
   text-decoration: none;
   color: #F5E2B0;
 }
-.links:hover{
+
+.links:hover {
   color: #283C57;
 }
 
@@ -505,4 +440,474 @@ root {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+
+/* ************************************************************** */
+/* ************************************************************** */
+/* ************************************************************** */
+
+
+/* ************** */
+/* PORTFOLIO PAGE */
+/* ************** */
+
+/* ******* */
+/* NAV BAR */
+/* ******* */
+
+.navbar-portfolio {
+  background: #283C57;
+  color: #F5E2B0;
+  font-variant: small-caps;
+}
+
+.navbar-portfolio .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-portfolio .navbar-nav {
+  position: relative;
+}
+
+.navbar-portfolio .navbar-nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(40, 60, 87, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.navbar-portfolio .navbar-collapse.show .navbar-nav::after {
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+
+  /* Remove fixed position for smaller screens */
+  .navbar-portfolio {
+    position: relative;
+  }
+
+  .navbar-portfolio .navbar-collapse {
+    padding: 1rem;
+  }
+}
+
+/* ****** */
+
+/* ************ */
+/* PORTFOLIO HP */
+/* ************ */
+
+.home-frame {
+  width: 90%;
+  height: 100%;
+  border-top: 3px solid #C54846;
+  border-right: 2px solid #C54846;
+  border-bottom: 1.5px solid #C54846;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#portfolio-title {
+  font-size: 1.5em;
+  color: #283C57;  
+  text-align: center;
+  line-height: 1.5;
+  font-variant: small-caps;
+}
+
+.circle-container {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;  
+  z-index: 10;  
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.fblue {
+  color: #283C57;
+}
+
+.fpink {
+  color: #E5B89F;
+}
+
+.fbrown {
+  color: #C54846;
+}
+
+.home-portfolio {
+  padding: 50px 0;
+  background-color: #FFF; 
+  text-align: center;
+}
+
+.home-portfolio h2 {
+  margin-bottom: 30px;
+}
+
+#home-kerning {
+  letter-spacing: 0.15em;
+}
+
+#home-kerning2 {
+  letter-spacing: 0.3em;
+}
+
+.home-frame-text {
+  font-size: 5em;  
+  text-align: center;
+  line-height: 1;
+  text-align: left;
+}
+
+/* ***** */
+/* FIGMA */
+/* ***** */
+
+.figma-portfolio {
+  padding: 50px 0;
+  background-color: #FFF; 
+  text-align: center;
+}
+
+.figma-portfolio h2 {
+  margin-bottom: 30px;
+}
+
+.figma-frame {
+  width: 15%;
+  height: 45%;
+  border-top: 2px solid #C54846;
+  border-right: 1.5px solid #C54846;
+  border-bottom: 1.5px solid #C54846;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+#figma-kerning {
+  letter-spacing: 0.05em;
+}
+
+.figma-frame-text {
+  font-size: 5em;  
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+/* ************ */
+
+/* ***** */
+/* ADOBE */
+/* ***** */
+
+.adobe-portfolio {
+  padding: 50px 0;
+  background-color: #FFF; 
+  text-align: center;
+}
+
+.adobe-portfolio h2 {
+  margin-bottom: 30px;
+}
+
+.adobe-frame {
+  width: 15%;
+  height: 50%;
+  border-top: 2px solid #C54846;
+  border-right: 1.5px solid #C54846;
+  border-bottom: 1.5px solid #C54846;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#adobe-kerning {
+  letter-spacing: 0.07em;
+}
+
+.adobe-frame-text {
+  font-size: 5em;  
+  text-align: center;
+  line-height: 1;
+  text-align: left;
+}
+
+/* ****** */
+/* CACTUS */
+/* ****** */
+
+.cactus-portfolio {
+  padding: 50px 0;
+  background-color: #FFF; 
+  text-align: center;
+}
+
+.cactus-portfolio h2 {
+  margin-bottom: 30px;
+}
+
+.cactus-frame {
+  width: 15%;
+  height: 45%;
+  border-top: 2px solid #C54846;
+  border-right: 1.5px solid #C54846;
+  border-bottom: 1.5px solid #C54846;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+#cactus-kerning {
+  letter-spacing: 0.2em;
+}
+
+.cactus-frame-text {
+  font-size: 5em;  
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* **** */
+/* TUEG */
+/* **** */
+
+.tueg-portfolio {
+  padding: 50px 0;
+  background-color: #FFF; 
+  text-align: center;
+}
+
+.tueg-portfolio h2 {
+  margin-bottom: 30px;
+}
+
+.tueg-frame {
+  width: 15%;
+  height: 45%;
+  border-top: 2px solid #C54846;
+  border-right: 1.5px solid #C54846;
+  border-bottom: 1.5px solid #C54846;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+#tueg-kerning {
+  letter-spacing: 0.2em;
+}
+
+.tueg-frame-text {
+  font-size: 5em;  
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ***************** */
+/* PORTFOLIO SECTION */
+/* ***************** */
+
+#grid-portfolio {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#grid-portfolio>div {
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#fflower {
+  float: center;
+}
+
+
+/* ***************** */
+
+/* ************* */
+/* FIGMA SECTION */
+/* ************* */
+
+#figma-box {
+
+  background-color: #283C57;
+  text-align: center;
+  height: 280px;
+  width: 900px;
+  border-right: 0px;
+  border-top: 3px solid;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  border-radius: 0%;
+  border-color: #F5E2B0;
+  margin: 0 auto;
+  word-wrap: break-word;
+  padding: 20px;
+  max-width: 900px;
+
+  position: relative;
+  /* Add relative positioning to create a reference for the absolute positioning of the line */
+}
+
+/* Add a vertical line for all screens */
+#figma-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  left: 50%;
+  border-left: 0.02px solid #F5E2B0;
+  opacity: 90%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 991.98px) {
+  #figma-box {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+
+#grid-figma {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#grid-figma>div {
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* ************* */
+
+/* ***** */
+/* ADOBE */
+/* ***** */
+
+
+
+/* ****** */
+/* FOOTER */
+/* ****** */
+
+/* Footer Styles */
+.footer-portfolio {
+  background-color: #283C57;
+  color: #FFF;
+}
+
+#footer-portfolio {
+  padding-top: 80px;
+  padding-bottom: 0;
+  color: #FFF;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.footer-portfolio .fa-phone,
+.footer-portfolio .fa-envelope,
+.footer-portfolio .fa-linkedin,
+.footer-portfolio .fa-facebook {
+    background: none;
+    color: #FFF; /* Set the color to white */
+    text-decoration: none;
+}
+
+.footer-portfolio .fa-phone:hover,
+.footer-portfolio .fa-envelope:hover,
+.footer-portfolio .fa-linkedin:hover,
+.footer-portfolio .fa-facebook:hover {
+    text-decoration: none;
+}
+
+.footer-portfolio .links {
+    text-decoration: none;
+    color: #FFF; /* Set the color to white */
+}
+
+.footer-portfolio .links:hover {
+    color: #283C57; /* Change the color on hover */
+}
+
+.portfolio-links {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.portfolio-links:hover {
+  color: #F5E2B0;
+}
+
+.portfolio-icons {
+  color: #FFF; /* Set the color to white */
+}
+
+.portfolio-icons:hover {
+  color: #F5E2B0; /* Change the color on hover */
+}
+
+#last-pic-portfolio {
+  float: middle;
+}
+
+#copyright-portfolio {
+  padding-top: 0px;
+  background-color: #283C57;
+  padding-bottom: 15px;
+  text-align: center;
 }
