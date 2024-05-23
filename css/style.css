@@ -746,11 +746,8 @@ root {
 }
 
 #figma-box {
-
   background-color: #283C57;
   text-align: center;
-  height: 280px;
-  width: 900px;
   border-right: 0px;
   border-top: 3px solid;
   border-left: 2px solid;
@@ -762,6 +759,7 @@ root {
   padding: 20px;
   max-width: 900px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 991.98px) {
@@ -770,23 +768,39 @@ root {
     height: auto;
   }
 
+  .figma-frame-text {
+    font-size: 2.5em; /* Adjust as needed for smaller screens */
+  }
 }
-
 
 #grid-figma {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: repeat(3, 1fr);
   width: 90%;
   margin: 0 auto;
-  justify-content: space-between;
-  align-items: flex-start;
+  gap: 20px; /* Add gap between grid items */
 }
 
-#grid-figma>div {
+#grid-figma > div {
   border: none;
   box-sizing: border-box;
   text-align: center;
 }
+
+@media (max-width: 767.98px) {
+  #grid-figma {
+    grid-template-columns: 1fr;
+  }
+
+  .figma-frame-text {
+    font-size: 2em; /* Adjust as needed for smaller screens */
+  }
+
+  #bike-app-section, #don-page, #rest-menu {
+    padding: 10px;
+  }
+}
+
 
 
 /* ************ */
