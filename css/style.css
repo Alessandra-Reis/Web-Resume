@@ -326,7 +326,7 @@ root {
 /* **************** */
 
 #supporting {
-  padding-bottom: 25px;
+  padding-bottom: 100px;
 }
 
 #grid-supporting {
@@ -345,6 +345,83 @@ root {
 }
 
 /* **************** */
+
+/* ************** */
+/* PORTFOLIO LINK */
+/* ************** */
+
+.link-frame {
+  width: 15%;
+  height: 100%;
+  border-top: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  border-bottom: 1.5px solid #FFF;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.link-portfolio {
+  padding: 50px 0;
+  background-color: #283C57; 
+  text-align: center;
+}
+
+.link-portfolio h2 {
+  margin-bottom: 30px;
+}
+
+#link-kerning {
+  letter-spacing: 0.15em;
+}
+
+#link-kerning2 {
+  letter-spacing: 0.3em;
+}
+
+.link-frame-text {
+  color: #FFF;
+  font-size: 5em;  
+  text-align: center;
+  line-height: 1;
+  text-align: left;
+}
+
+#portLink-btn {
+  text-decoration: none;
+}
+
+#portLink-btn:hover {
+  text-decoration: underline;
+  color: #FFF;
+  background-color: #283C57;
+}
+
+@media (max-width: 768px) {
+  .link-frame {
+    width: 30%;
+  }
+
+  .link-frame-text {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .link-frame {
+    width: 50%;
+  }
+
+  .link-frame-text {
+    font-size: 2em;
+  }
+}
 
 /* ****** */
 /* FOOTER */
@@ -498,6 +575,8 @@ root {
   }
 }
 
+
+
 /* ****** */
 
 /* ************ */
@@ -616,9 +695,97 @@ root {
 }
 
 .figma-frame-text {
-  font-size: 5em;  
+  font-size: 5em;
   text-align: center;
   line-height: 1.5;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 1200px) {
+  .figma-frame {
+    width: 20%;
+    height: 40%;
+  }
+  
+  .figma-frame-text {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 992px) {
+  .figma-frame {
+    width: 25%;
+    height: 35%;
+  }
+  
+  .figma-frame-text {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .figma-frame {
+    width: 30%;
+    height: 30%;
+  }
+  
+  .figma-frame-text {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .figma-frame {
+    width: 40%;
+    height: 25%;
+  }
+  
+  .figma-frame-text {
+    font-size: 2.5em;
+  }
+}
+
+#figma-box {
+
+  background-color: #283C57;
+  text-align: center;
+  height: 280px;
+  width: 900px;
+  border-right: 0px;
+  border-top: 3px solid;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  border-radius: 0%;
+  border-color: #F5E2B0;
+  margin: 0 auto;
+  word-wrap: break-word;
+  padding: 20px;
+  max-width: 900px;
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  #figma-box {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+
+#grid-figma {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#grid-figma>div {
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 
@@ -665,6 +832,77 @@ root {
   text-align: left;
 }
 
+/* Media queries for smaller screens */
+@media (max-width: 1200px) {
+  .adobe-frame {
+    width: 20%;
+    height: 45%;
+  }
+  
+  .adobe-frame-text {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 992px) {
+  .adobe-frame {
+    width: 25%;
+    height: 40%;
+  }
+  
+  .adobe-frame-text {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .adobe-frame {
+    width: 30%;
+    height: 35%;
+  }
+  
+  .adobe-frame-text {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .adobe-frame {
+    width: 40%;
+    height: 30%;
+  }
+  
+  .adobe-frame-text {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .embed-responsive {
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+}
+
+@media (max-width: 576px) {
+  .embed-responsive {
+      padding-bottom: 75%; /* 4:3 aspect ratio */
+  }
+}
+
+#grid-adobe {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#grid-adobe>div {
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
 /* ****** */
 /* CACTUS */
 /* ****** */
@@ -703,6 +941,52 @@ root {
   text-align: center;
   line-height: 1.5;
 }
+
+/* Media queries for smaller screens */
+@media (max-width: 1200px) {
+  .cactus-frame {
+    width: 20%;
+    height: 40%;
+  }
+  
+  .cactus-frame-text {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 992px) {
+  .cactus-frame {
+    width: 25%;
+    height: 35%;
+  }
+  
+  .cactus-frame-text {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .cactus-frame {
+    width: 30%;
+    height: 30%;
+  }
+  
+  .cactus-frame-text {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .cactus-frame {
+    width: 40%;
+    height: 25%;
+  }
+  
+  .cactus-frame-text {
+    font-size: 2.5em;
+  }
+}
+
 
 /* **** */
 /* TUEG */
@@ -743,6 +1027,52 @@ root {
   line-height: 1.5;
 }
 
+/* Media queries for smaller screens */
+@media (max-width: 1200px) {
+  .tueg-frame {
+    width: 20%;
+    height: 40%;
+  }
+  
+  .tueg-frame-text {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 992px) {
+  .tueg-frame {
+    width: 25%;
+    height: 35%;
+  }
+  
+  .tueg-frame-text {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .tueg-frame {
+    width: 30%;
+    height: 30%;
+  }
+  
+  .tueg-frame-text {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .tueg-frame {
+    width: 40%;
+    height: 25%;
+  }
+  
+  .tueg-frame-text {
+    font-size: 2.5em;
+  }
+}
+
+
 /* ***************** */
 /* PORTFOLIO SECTION */
 /* ***************** */
@@ -764,87 +1094,49 @@ root {
   float: center;
 }
 
-
 /* ***************** */
 
-/* ************* */
-/* FIGMA SECTION */
-/* ************* */
+/* ******* */
+/* CLOSING */
+/* ******* */
 
-#figma-box {
-
-  background-color: #283C57;
-  text-align: center;
-  height: 280px;
-  width: 900px;
-  border-right: 0px;
-  border-top: 3px solid;
-  border-left: 2px solid;
-  border-bottom: 2px solid;
-  border-radius: 0%;
-  border-color: #F5E2B0;
+.closing-frame {
+  width: 15%;
+  height: 45%;
+  border-top: 2px solid #C54846;
+  border-right: 1.5px solid #C54846;
+  border-bottom: 1.5px solid #C54846;
+  border-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  word-wrap: break-word;
-  padding: 20px;
-  max-width: 900px;
-
-  position: relative;
-  /* Add relative positioning to create a reference for the absolute positioning of the line */
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
-/* Add a vertical line for all screens */
-#figma-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  left: 50%;
-  border-left: 0.02px solid #F5E2B0;
-  opacity: 90%;
-  transform: translateX(-50%);
-}
-
-@media (max-width: 991.98px) {
-  #figma-box {
-    max-width: 100%;
-    height: auto;
+@media (max-width: 576px) {
+  .closing-frame {
+    width: 40%;
+    height: 25%;
   }
-
+  
+  
 }
 
 
-#grid-figma {
-  display: grid;
-  grid-template-columns: 45% 10% 45%;
-  width: 90%;
-  margin: 0 auto;
+
+.btn-linkedin2 {
+  color: #283C57;
+  background-color: #FFF;
+  border: solid #283C57 1px;
+  margin-bottom: 40px;
 }
 
-#grid-figma>div {
-  border: none;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-/* ************* */
-
-/* ***** */
-/* ADOBE */
-/* ***** */
-
-#grid-adobe {
-  display: grid;
-  grid-template-columns: 45% 10% 45%;
-  width: 90%;
-  margin: 0 auto;
-}
-
-#grid-adobe>div {
-  border: none;
-  box-sizing: border-box;
-  text-align: center;
+.btn-linkedin2:hover {
+  color: #FFF;
+  background-color: #283C57;
 }
 
 /* ****** */
