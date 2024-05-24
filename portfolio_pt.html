@@ -32,7 +32,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -50,12 +49,11 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/style.css" rel="stylesheet" />
     <link href="cover.css" rel="stylesheet" />
-
+    
     <script>
         $(document).ready(function () {
             $(".navbar-nav .nav-link").on("click", function () {
@@ -63,6 +61,12 @@
             });
         });
     </script>
+
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 
@@ -101,24 +105,25 @@
                     <li class="nav-item dropdown d-none d-lg-block">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdownPortfolio"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="images/english-flag.png" alt="English" class="flag-icon"> EN
+                            <img src="images/portuguese-flag.png" alt="Portuguese" class="flag-icon"> PT
+                            
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownPortfolio">
                             <li>
-                                <a class="dropdown-item" href="portfolio_pt.html">
-                                    <img src="images/portuguese-flag.png" alt="Portuguese" class="flag-icon"> PT
+                                <a class="dropdown-item" href="portfolio.html">
+                                    <img src="images/english-flag.png" alt="English" class="flag-icon"> EN
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <!-- Language Links for Smaller Screens -->
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link text-white" href="#">
+                        <a class="nav-link text-white" href="portfolio.html">
                             <img src="images/english-flag.png" alt="English" class="flag-icon"> EN
                         </a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <a class="nav-link text-white" href="portfolio_pt.html">
+                        <a class="nav-link text-white" href="#">
                             <img src="images/portuguese-flag.png" alt="Portuguese" class="flag-icon"> PT
                         </a>
                     </li>
@@ -168,67 +173,71 @@
     <!--FIGMA -->
 
     <div id="figma"></div>
-    <div id="figma-portfolio" class="figma-portfolio text-center general-padding">
+    <div id="figma-portfolio" class="figma-portfolio text-center general-padding vh-50">
         <div class="figma-frame">
             <div class="figma-frame-text">
                 <div class="fblue">F I <span style="color: #E5B89F;">G</span></div>
                 <div class="fbrown" id="figma-kerning">M A</div>
             </div>
         </div>
-        <!-- CAROUSEL FIGMA -->
-        <div class="mb-0 general-padding">
-            <div class="container">
-                <div class="text-center">
-                    <br />
+    </div>
 
-                    <div class="carousel slide mx-auto figmaCarousel" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="grid-portfolio">
-                                <!-- GRID 1 -->
-                                <div>
-                                    <button class="carousel-control-prev" style="color: #283c57;" type="button"
-                                        data-bs-target=".figmaCarousel" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                </div>
-                                <!-- END -->
+    <!-- CAROUSEL FIGMA -->
+    <div class="mb-0 general-padding">
+        <div class="container">
+            <div class="text-center">
+                <br />
 
-                                <!-- GRID 2 -->
-                                <div class="carousel-item active">
-                                    <img src="images/portfolio/Figma01.svg" class="img-thumbnail" alt="..." width="800"
-                                        height="400" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/portfolio/Figma02.svg" class="img-thumbnail" alt="..." width="800"
-                                        height="400" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/portfolio/Figma03.svg" class="img-thumbnail" alt="..." width="800"
-                                        height="400" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/portfolio/Figma04.svg" class="img-thumbnail" alt="..." width="800"
-                                        height="400" />
-                                </div>
-                                <!-- END -->
-
-                                <!-- GRID 3 -->
-                                <div>
-                                    <button class="carousel-control-next" style="color: #283c57;" type="button"
-                                        data-bs-target=".figmaCarousel" data-bs-slide="next">
-                                        <span class="visually-hidden">Next</span>
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                                <!-- END -->
+                <div class="carousel slide mx-auto figmaCarousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="grid-portfolio">
+                            <!-- GRID 1 -->
+                            <div>
+                                <button class="carousel-control-prev" style="color: #283c57;" type="button"
+                                    data-bs-target=".figmaCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
                             </div>
+                            <!-- END -->
+
+                            <!-- GRID 2 -->
+                            <div class="carousel-item active">
+                                <img src="images/portfolio/Figma01.svg" class="img-thumbnail" alt="..." width="800"
+                                    height="400" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/portfolio/Figma02.svg" class="img-thumbnail" alt="..." width="800"
+                                    height="400" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/portfolio/Figma03.svg" class="img-thumbnail" alt="..." width="800"
+                                    height="400" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/portfolio/Figma04.svg" class="img-thumbnail" alt="..." width="800"
+                                    height="400" />
+                            </div>
+                            <!-- END -->
+
+                            <!-- GRID 3 -->
+                            <div>
+                                <button class="carousel-control-next" style="color: #283c57;" type="button"
+                                    data-bs-target=".figmaCarousel" data-bs-slide="next">
+                                    <span class="visually-hidden">Next</span>
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <!-- END -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <hr style="color: #E5B89F;">
+
 
     <!--FIGMA -->
 
@@ -296,7 +305,7 @@
     <!--ADOBE -->
 
     <div id="adobe"></div>
-    <div id="adobe-portfolio" class="adobe-portfolio text-center general-padding">
+    <div id="adobe-portfolio" class="adobe-portfolio text-center general-padding vh-50">
         <div class="adobe-frame">
             <div class="adobe-frame-text">
                 <div class="fblue">A</div>
@@ -304,48 +313,49 @@
                 <div class="fbrown" id="adobe-kerning">B E</div>
             </div>
         </div>
-        <!-- CAROUSEL ADOBE -->
-        <div class="mb-0 general-padding">
-            <div class="container">
-                <div class="text-center">
-                    <br />
+    </div>
 
-                    <div>
-                        <div class="carousel slide adobeCarousel mx-auto" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="grid-portfolio">
-                                    <!-- GRID 1 -->
-                                    <div>
-                                        <button class="carousel-control-prev" style="color: #283c57;" type="button"
-                                            data-bs-target=".adobeCarousel" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                    </div>
-                                    <!-- END -->
+    <!-- CAROUSEL ADOBE -->
+    <div class="mb-0 general-padding">
+        <div class="container">
+            <div class="text-center">
+                <br />
 
-                                    <!-- GRID 2 -->
-                                    <div class="carousel-item active">
-                                        <img src="images/portfolio/Adobe01.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/portfolio/Adobe02.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-                                </div>
-                                <!-- END -->
-
-                                <!-- GRID 3 -->
+                <div>
+                    <div class="carousel slide adobeCarousel mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="grid-portfolio">
+                                <!-- GRID 1 -->
                                 <div>
-                                    <button class="carousel-control-next" style="color: #283c57;" type="button"
-                                        data-bs-target=".adobeCarousel" data-bs-slide="next">
-                                        <span class="visually-hidden">Next</span>
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <button class="carousel-control-prev" style="color: #283c57;" type="button"
+                                        data-bs-target=".adobeCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
                                     </button>
                                 </div>
                                 <!-- END -->
+
+                                <!-- GRID 2 -->
+                                <div class="carousel-item active">
+                                    <img src="images/portfolio/Adobe01.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/portfolio/Adobe02.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
                             </div>
+                            <!-- END -->
+
+                            <!-- GRID 3 -->
+                            <div>
+                                <button class="carousel-control-next" style="color: #283c57;" type="button"
+                                    data-bs-target=".adobeCarousel" data-bs-slide="next">
+                                    <span class="visually-hidden">Next</span>
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <!-- END -->
                         </div>
                     </div>
                 </div>
@@ -353,6 +363,7 @@
         </div>
     </div>
 
+    <hr style="color: #E5B89F;">
 
     <!-- PREMIERE PRO -->
 
@@ -388,71 +399,72 @@
                 <div class="fbrown">T U <span class="fpink">S</span></div>
             </div>
         </div>
-        <!-- CAROUSEL CACTUS -->
-        <div class="mb-0 general-padding">
-            <div class="container">
-                <div class="text-center">
-                    <!-- <h1 class="page-section-heading text-start fbrown">ARTS</h1> -->
+    </div>
 
-                    <br />
 
-                    <div>
-                        <div class="carousel slide cactusCarousel mx-auto" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="grid-portfolio">
-                                    <!-- GRID 1 -->
-                                    <div>
-                                        <button class="carousel-control-prev" style="color: #283c57;" type="button"
-                                            data-bs-target=".cactusCarousel" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
+    <!-- CAROUSEL CACTUS -->
+    <div class="mb-0 general-padding">
+        <div class="container">
+            <div class="text-center">
+                <!-- <h1 class="page-section-heading text-start fbrown">ARTS</h1> -->
 
-                                        </button>
+                <br />
 
-                                    </div>
-                                    <!-- END -->
-
-                                    <!-- GRID 2 -->
-
-                                    <div class="carousel-item active">
-                                        <img src="images/portfolio/Cactus01.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/portfolio/Cactus02.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/portfolio/Cactus03.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/portfolio/Cactus04.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-
-                                </div>
-                                <!-- END -->
-
-                                <!-- GRID 3 -->
+                <div>
+                    <div class="carousel slide cactusCarousel mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="grid-portfolio">
+                                <!-- GRID 1 -->
                                 <div>
-                                    <button class="carousel-control-next" style="color: #283c57;" type="button"
-                                        data-bs-target=".cactusCarousel" data-bs-slide="next">
-                                        <span class="visually-hidden">Next</span>
+                                    <button class="carousel-control-prev" style="color: #283c57;" type="button"
+                                        data-bs-target=".cactusCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
 
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
 
                                 </div>
                                 <!-- END -->
+
+                                <!-- GRID 2 -->
+
+                                <div class="carousel-item active">
+                                    <img src="images/portfolio/Cactus01.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/portfolio/Cactus02.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/portfolio/Cactus03.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/portfolio/Cactus04.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
+
                             </div>
+                            <!-- END -->
+
+                            <!-- GRID 3 -->
+                            <div>
+                                <button class="carousel-control-next" style="color: #283c57;" type="button"
+                                    data-bs-target=".cactusCarousel" data-bs-slide="next">
+                                    <span class="visually-hidden">Next</span>
+
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+
+                            </div>
+                            <!-- END -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <hr style="color: #E5B89F;">
 
@@ -465,68 +477,67 @@
                 <div class="fbrown">E G</div>
             </div>
         </div>
-        <!-- CAROUSEL TUEG -->
-        <div class="mb-0 general-padding">
-            <div class="container">
-                <div class="text-center">
-                    <!-- <h1 class="page-section-heading text-start fbrown">ARTS</h1> -->
+    </div>
 
-                    <br />
+    <!-- CAROUSEL TUEG -->
+    <div class="mb-0 general-padding">
+        <div class="container">
+            <div class="text-center">
+                <!-- <h1 class="page-section-heading text-start fbrown">ARTS</h1> -->
 
-                    <div>
-                        <div class="carousel slide tuegCarousel mx-auto" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="grid-portfolio">
-                                    <!-- GRID 1 -->
-                                    <div>
-                                        <button class="carousel-control-prev" style="color: #283c57;" type="button"
-                                            data-bs-target=".tuegCarousel" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
+                <br />
 
-                                        </button>
-
-                                    </div>
-                                    <!-- END -->
-
-                                    <!-- GRID 2 -->
-
-                                    <div class="carousel-item active">
-                                        <img src="images/portfolio/TUEG1.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/portfolio/TUEG2.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/portfolio/TUEG3.svg" class="img-thumbnail" alt="..."
-                                            width="800" height="400" />
-                                    </div>
-
-                                </div>
-                                <!-- END -->
-
-                                <!-- GRID 3 -->
+                <div>
+                    <div class="carousel slide tuegCarousel mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="grid-portfolio">
+                                <!-- GRID 1 -->
                                 <div>
-                                    <button class="carousel-control-next" style="color: #283c57;" type="button"
-                                        data-bs-target=".tuegCarousel" data-bs-slide="next">
-                                        <span class="visually-hidden">Next</span>
+                                    <button class="carousel-control-prev" style="color: #283c57;" type="button"
+                                        data-bs-target=".tuegCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
 
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
 
                                 </div>
                                 <!-- END -->
+
+                                <!-- GRID 2 -->
+
+                                <div class="carousel-item active">
+                                    <img src="images/portfolio/TUEG1.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/portfolio/TUEG2.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/portfolio/TUEG3.svg" class="img-thumbnail" alt="..." width="800"
+                                        height="400" />
+                                </div>
+
                             </div>
+                            <!-- END -->
+
+                            <!-- GRID 3 -->
+                            <div>
+                                <button class="carousel-control-next" style="color: #283c57;" type="button"
+                                    data-bs-target=".tuegCarousel" data-bs-slide="next">
+                                    <span class="visually-hidden">Next</span>
+
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+
+                            </div>
+                            <!-- END -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <hr style="color: #E5B89F;">
 
@@ -540,7 +551,7 @@
 
     <div class="text-center mb-4">
         <a class="btn btn-xl btn-linkedin2" style="margin-top: 20px; border-radius: 0%;"
-            href="https://www.linkedin.com/in/alessandras-reis" target="_blank">
+            href="www.linkedin.com/in/alessandras-reis" target="_blank">
             Check out my Linkedin!
         </a>
     </div>
@@ -576,7 +587,7 @@
                 <div class="col-lg-4">
                     <h4 class="text-uppercase mb-4">Find me on</h4>
                     <p class="lead mb-0">
-                        <a href="https://www.linkedin.com/in/alessandras-reis"
+                        <a href="www.linkedin.com/in/alessandras-reis"
                             class="fa fa-linkedin portfolio-links portfolio-icons" target="_blank"></a>
                         <a class="portfolio-links portfolio-icons" href="www.linkedin.com/in/alessandras-reis"
                             target="_blank">Linkedin</a>

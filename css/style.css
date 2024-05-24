@@ -129,7 +129,7 @@ root {
 /* CAROUSEL SETTING FOR PORTFOLIO AND PROJECTS */
 /* ******************************************* */
 
- 
+
 .figmaCarousel .supportingCarousel .adobeCarousel .cactusCarousel .tuegCarousel {
   margin-bottom: 50px;
 }
@@ -185,16 +185,7 @@ root {
   opacity: 1;
 }
 
-/* @media (max-width: 991.98px) {
-  .navbar-collapse {
-    padding: 1rem;
-  }
-} */
-
-
 @media (max-width: 991.98px) {
-
-  /* Remove fixed position for smaller screens */
   .navbar {
     position: relative;
   }
@@ -204,8 +195,31 @@ root {
   }
 }
 
+.flag-icon {
+  width: 24px;
+  height: auto;
+  margin-right: 5px;
+}
 
+/* Custom styles for the dropdown menu */
+.dropdown-menu {
+  background-color: #b43a37;
+  color: #F5E2B0;
+}
 
+/* Ensure the dropdown items inherit the text color */
+.dropdown-item {
+  color: #F5E2B0;
+}
+
+.dropdown-item:hover {
+  background-color: #C54846;
+  color: #FFF;
+}
+
+.dropdown-toggle::after {
+  color: #F5E2B0;
+}
 
 /* ******* */
 
@@ -359,7 +373,7 @@ root {
   border-left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   margin: 0 auto;
   margin-top: 50px;
   font-family: 'Montserrat', sans-serif;
@@ -369,7 +383,7 @@ root {
 
 .link-portfolio {
   padding: 50px 0;
-  background-color: #283C57; 
+  background-color: #283C57;
   text-align: center;
 }
 
@@ -387,7 +401,7 @@ root {
 
 .link-frame-text {
   color: #FFF;
-  font-size: 5em;  
+  font-size: 5em;
   text-align: center;
   line-height: 1;
   text-align: left;
@@ -563,8 +577,32 @@ root {
   opacity: 1;
 }
 
-@media (max-width: 991.98px) {
+/* Custom styles for the language dropdown menu */
+.navbar-portfolio .dropdown-menu {
+  background-color: #1c2a3b; /* Match the navbar background color */
+  color: #F5E2B0; /* Match the navbar text color */
+  border: none; /* Remove border */
+}
 
+.navbar-portfolio .dropdown-item {
+  color: #F5E2B0; /* Match the navbar text color */
+}
+
+.navbar-portfolio .dropdown-item:hover {
+  background-color: #283C57; /* Darken the background color on hover */
+  color: #FFF; /* Change text color on hover */
+}
+
+.navbar-portfolio .dropdown-toggle {
+  color: #F5E2B0; /* Match the navbar text color */
+}
+
+.navbar-portfolio .dropdown-toggle::after {
+  color: #F5E2B0; /* Match the navbar text color */
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 991.98px) {
   /* Remove fixed position for smaller screens */
   .navbar-portfolio {
     position: relative;
@@ -592,7 +630,7 @@ root {
   border-left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -601,7 +639,7 @@ root {
 
 #portfolio-title {
   font-size: 1.5em;
-  color: #283C57;  
+  color: #283C57;
   text-align: center;
   line-height: 1.5;
   font-variant: small-caps;
@@ -614,8 +652,8 @@ root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;  
-  z-index: 10;  
+  gap: 20px;
+  z-index: 10;
 }
 
 .circle {
@@ -638,7 +676,7 @@ root {
 
 .home-portfolio {
   padding: 50px 0;
-  background-color: #FFF; 
+  background-color: #FFF;
   text-align: center;
 }
 
@@ -655,7 +693,7 @@ root {
 }
 
 .home-frame-text {
-  font-size: 5em;  
+  font-size: 5em;
   text-align: center;
   line-height: 1;
   text-align: left;
@@ -667,7 +705,7 @@ root {
 
 .figma-portfolio {
   padding: 50px 0;
-  background-color: #FFF; 
+  background-color: #FFF;
   text-align: center;
 }
 
@@ -706,7 +744,7 @@ root {
     width: 20%;
     height: 40%;
   }
-  
+
   .figma-frame-text {
     font-size: 4em;
   }
@@ -717,7 +755,7 @@ root {
     width: 25%;
     height: 35%;
   }
-  
+
   .figma-frame-text {
     font-size: 3.5em;
   }
@@ -728,7 +766,7 @@ root {
     width: 30%;
     height: 30%;
   }
-  
+
   .figma-frame-text {
     font-size: 3em;
   }
@@ -739,7 +777,7 @@ root {
     width: 40%;
     height: 25%;
   }
-  
+
   .figma-frame-text {
     font-size: 2.5em;
   }
@@ -769,7 +807,8 @@ root {
   }
 
   .figma-frame-text {
-    font-size: 2.5em; /* Adjust as needed for smaller screens */
+    font-size: 2.5em;
+    /* Adjust as needed for smaller screens */
   }
 }
 
@@ -778,10 +817,11 @@ root {
   grid-template-columns: repeat(3, 1fr);
   width: 90%;
   margin: 0 auto;
-  gap: 20px; /* Add gap between grid items */
+  gap: 20px;
+  /* Add gap between grid items */
 }
 
-#grid-figma > div {
+#grid-figma>div {
   border: none;
   box-sizing: border-box;
   text-align: center;
@@ -793,10 +833,13 @@ root {
   }
 
   .figma-frame-text {
-    font-size: 2em; /* Adjust as needed for smaller screens */
+    font-size: 2em;
+    /* Adjust as needed for smaller screens */
   }
 
-  #bike-app-section, #don-page, #rest-menu {
+  #bike-app-section,
+  #don-page,
+  #rest-menu {
     padding: 10px;
   }
 }
@@ -811,7 +854,7 @@ root {
 
 .adobe-portfolio {
   padding: 50px 0;
-  background-color: #FFF; 
+  background-color: #FFF;
   text-align: center;
 }
 
@@ -840,7 +883,7 @@ root {
 }
 
 .adobe-frame-text {
-  font-size: 5em;  
+  font-size: 5em;
   text-align: center;
   line-height: 1;
   text-align: left;
@@ -852,7 +895,7 @@ root {
     width: 20%;
     height: 45%;
   }
-  
+
   .adobe-frame-text {
     font-size: 4em;
   }
@@ -863,7 +906,7 @@ root {
     width: 25%;
     height: 40%;
   }
-  
+
   .adobe-frame-text {
     font-size: 3.5em;
   }
@@ -874,7 +917,7 @@ root {
     width: 30%;
     height: 35%;
   }
-  
+
   .adobe-frame-text {
     font-size: 3em;
   }
@@ -885,7 +928,7 @@ root {
     width: 40%;
     height: 30%;
   }
-  
+
   .adobe-frame-text {
     font-size: 2.5em;
   }
@@ -893,13 +936,15 @@ root {
 
 @media (max-width: 768px) {
   .embed-responsive {
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
   }
 }
 
 @media (max-width: 576px) {
   .embed-responsive {
-      padding-bottom: 75%; /* 4:3 aspect ratio */
+    padding-bottom: 75%;
+    /* 4:3 aspect ratio */
   }
 }
 
@@ -923,7 +968,7 @@ root {
 
 .cactus-portfolio {
   padding: 50px 0;
-  background-color: #FFF; 
+  background-color: #FFF;
   text-align: center;
 }
 
@@ -951,7 +996,7 @@ root {
 }
 
 .cactus-frame-text {
-  font-size: 5em;  
+  font-size: 5em;
   text-align: center;
   line-height: 1.5;
 }
@@ -962,7 +1007,7 @@ root {
     width: 20%;
     height: 40%;
   }
-  
+
   .cactus-frame-text {
     font-size: 4em;
   }
@@ -973,7 +1018,7 @@ root {
     width: 25%;
     height: 35%;
   }
-  
+
   .cactus-frame-text {
     font-size: 3.5em;
   }
@@ -984,7 +1029,7 @@ root {
     width: 30%;
     height: 30%;
   }
-  
+
   .cactus-frame-text {
     font-size: 3em;
   }
@@ -995,7 +1040,7 @@ root {
     width: 40%;
     height: 25%;
   }
-  
+
   .cactus-frame-text {
     font-size: 2.5em;
   }
@@ -1008,7 +1053,7 @@ root {
 
 .tueg-portfolio {
   padding: 50px 0;
-  background-color: #FFF; 
+  background-color: #FFF;
   text-align: center;
 }
 
@@ -1036,7 +1081,7 @@ root {
 }
 
 .tueg-frame-text {
-  font-size: 5em;  
+  font-size: 5em;
   text-align: center;
   line-height: 1.5;
 }
@@ -1047,7 +1092,7 @@ root {
     width: 20%;
     height: 40%;
   }
-  
+
   .tueg-frame-text {
     font-size: 4em;
   }
@@ -1058,7 +1103,7 @@ root {
     width: 25%;
     height: 35%;
   }
-  
+
   .tueg-frame-text {
     font-size: 3.5em;
   }
@@ -1069,7 +1114,7 @@ root {
     width: 30%;
     height: 30%;
   }
-  
+
   .tueg-frame-text {
     font-size: 3em;
   }
@@ -1080,7 +1125,7 @@ root {
     width: 40%;
     height: 25%;
   }
-  
+
   .tueg-frame-text {
     font-size: 2.5em;
   }
@@ -1135,8 +1180,8 @@ root {
     width: 40%;
     height: 25%;
   }
-  
-  
+
+
 }
 
 
@@ -1180,25 +1225,28 @@ root {
 .footer-portfolio .fa-envelope,
 .footer-portfolio .fa-linkedin,
 .footer-portfolio .fa-facebook {
-    background: none;
-    color: #FFF; /* Set the color to white */
-    text-decoration: none;
+  background: none;
+  color: #FFF;
+  /* Set the color to white */
+  text-decoration: none;
 }
 
 .footer-portfolio .fa-phone:hover,
 .footer-portfolio .fa-envelope:hover,
 .footer-portfolio .fa-linkedin:hover,
 .footer-portfolio .fa-facebook:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-portfolio .links {
-    text-decoration: none;
-    color: #FFF; /* Set the color to white */
+  text-decoration: none;
+  color: #FFF;
+  /* Set the color to white */
 }
 
 .footer-portfolio .links:hover {
-    color: #283C57; /* Change the color on hover */
+  color: #283C57;
+  /* Change the color on hover */
 }
 
 .portfolio-links {
@@ -1211,11 +1259,13 @@ root {
 }
 
 .portfolio-icons {
-  color: #FFF; /* Set the color to white */
+  color: #FFF;
+  /* Set the color to white */
 }
 
 .portfolio-icons:hover {
-  color: #F5E2B0; /* Change the color on hover */
+  color: #F5E2B0;
+  /* Change the color on hover */
 }
 
 #last-pic-portfolio {
