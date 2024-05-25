@@ -858,6 +858,10 @@ root {
   }
 }
 
+.btn-prototypes {
+  border-radius: 0%;
+}
+
 
 
 /* ************ */
@@ -962,6 +966,8 @@ root {
   }
 }
 
+
+
 #grid-adobe {
   display: grid;
   grid-template-columns: 45% 10% 45%;
@@ -976,12 +982,19 @@ root {
 }
 
 #premiere-video {
-  padding: 2rem 1rem; /* Adjust as needed for general padding */
+  padding: 2rem 1rem; 
 }
 
 #premiere-video h1 {
-  font-size: 2rem; /* Adjust as needed for heading size */
+  font-size: 2rem; 
   margin-bottom: 1rem;
+}
+
+.video-frame {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  padding: 1rem;
 }
 
 .video-custom {
