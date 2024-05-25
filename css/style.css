@@ -981,53 +981,50 @@ root {
   text-align: center;
 }
 
-#premiere-video {
-  padding: 2rem 1rem; 
-}
+/* PREMIERE VIDEO */
 
-#premiere-video h1 {
-  font-size: 2rem; 
-  margin-bottom: 1rem;
+.premiere-pro-section {
+  background-color: #F5E2B0; /* Background color */
+  color: #283C57; /* Text color */
+  padding: 60px 0 70px 0; /* Padding top and bottom */
+  margin-bottom: 50px; /* Bottom margin */
+  text-align: center; /* Center align text */
 }
 
 .video-frame {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 0px;
-  padding: 1rem;
+  background-color: #fff; /* White background color */
+  padding: 1rem; /* Padding around the frame */
+  border-radius: 0; /* No border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  margin-top: 30px; /* Top margin */
+  max-width: 850px; /* Maximum width */
+  margin-left: auto; /* Center the frame horizontally */
+  margin-right: auto; /* Center the frame horizontally */
 }
 
-.video-custom {
-  width: 100%;
-  height: auto;
-  max-height: 500px; /* Adjust this value as needed */
+.video-description {
+  margin-top: 1rem; /* Space above the description */
 }
 
-@media (max-width: 768px) {
-  #premiere-video {
-      padding: 1.5rem 1rem; /* Reduce padding on smaller screens */
-  }
-
-  #premiere-video h1 {
-      font-size: 1.75rem; /* Adjust heading size for smaller screens */
-  }
-
-  .video-custom {
-      max-height: 300px; /* Adjust this value as needed for smaller screens */
-  }
+.video {
+  position: relative; /* Position relative for absolute positioning */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  padding-top: 56.25%; /* Aspect ratio (16:9) */
 }
 
-@media (max-width: 576px) {
-  #premiere-video {
-      padding: 1rem 0.5rem; /* Reduce padding further on extra small screens */
-  }
+.video iframe {
+  position: absolute; /* Position absolute */
+  top: 50%; /* Position from top */
+  left: 50%; /* Position from left */
+  transform: translate(-50%, -50%); /* Center the video */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border-radius: 0; /* No border radius */
+}
 
-  #premiere-video h1 {
-      font-size: 1.5rem; /* Adjust heading size for extra small screens */
-  }
-
-  .video-custom {
-      max-height: 200px; /* Adjust this value as needed for extra small screens */
+@media (min-width: 992px) {
+  .video iframe {
+      width: 800px; /* Video width for larger screens */
   }
 }
 
