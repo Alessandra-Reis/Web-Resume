@@ -193,6 +193,18 @@ root {
   .navbar-collapse {
     padding: 1rem;
   }
+
+  .navbar-toggler-close {
+    display: none;
+  }
+
+  .navbar-collapse.show .navbar-toggler-close {
+    display: inline-block;
+  }
+
+  .navbar-collapse.show .navbar-toggler-icon {
+    display: none;
+  }
 }
 
 .flag-icon {
@@ -246,7 +258,7 @@ root {
 
   background-color: #283C57;
   text-align: center;
-  height: 430px;
+  height: 450px;
   width: 100%;
   border-style: solid;
   border-left: 0px;
@@ -256,7 +268,6 @@ root {
   margin: 0 auto;
   word-wrap: break-word;
   padding: 20px;
-
   max-width: 510px;
 }
 
@@ -409,12 +420,15 @@ root {
 
 #portLink-btn {
   text-decoration: none;
+  color: #FFF;
+  border-radius: 0%;
+  border-color: #FFF;
+  margin-top: 20px;
 }
 
 #portLink-btn:hover {
-  text-decoration: underline;
-  color: #FFF;
-  background-color: #283C57;
+  color: #283C57;
+  background-color: #FFF;
 }
 
 @media (max-width: 768px) {
@@ -622,7 +636,7 @@ root {
 /* ************ */
 
 .home-frame {
-  width: 90%;
+  width: 100%;
   height: 100%;
   border-top: 3px solid #C54846;
   border-right: 2px solid #C54846;
@@ -961,6 +975,49 @@ root {
   text-align: center;
 }
 
+#premiere-video {
+  padding: 2rem 1rem; /* Adjust as needed for general padding */
+}
+
+#premiere-video h1 {
+  font-size: 2rem; /* Adjust as needed for heading size */
+  margin-bottom: 1rem;
+}
+
+.video-custom {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+  #premiere-video {
+      padding: 1.5rem 1rem; /* Reduce padding on smaller screens */
+  }
+
+  #premiere-video h1 {
+      font-size: 1.75rem; /* Adjust heading size for smaller screens */
+  }
+
+  .video-custom {
+      max-height: 300px; /* Adjust this value as needed for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #premiere-video {
+      padding: 1rem 0.5rem; /* Reduce padding further on extra small screens */
+  }
+
+  #premiere-video h1 {
+      font-size: 1.5rem; /* Adjust heading size for extra small screens */
+  }
+
+  .video-custom {
+      max-height: 200px; /* Adjust this value as needed for extra small screens */
+  }
+}
+
 
 /* ****** */
 /* CACTUS */
@@ -977,7 +1034,7 @@ root {
 }
 
 .cactus-frame {
-  width: 15%;
+  width: 20%;
   height: 45%;
   border-top: 2px solid #C54846;
   border-right: 1.5px solid #C54846;
@@ -992,7 +1049,7 @@ root {
 }
 
 #cactus-kerning {
-  letter-spacing: 0.2em;
+  letter-spacing: 0em;
 }
 
 .cactus-frame-text {
