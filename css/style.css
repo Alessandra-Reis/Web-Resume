@@ -314,19 +314,150 @@ root {
 }
 
 /* ************* */
+/* ABOUT SECTION */
+/* ************* */
 
-/* ************** */
-/* SKILLS SECTION */
-/* ************** */
+/* ************* */
+
+/* ************* */
+/* TOOLS SECTION */
+/* ************* */
 
 #blue-flower {
   float: right;
-  padding-top: 5%;
+  margin-right: 20spx;
 }
 
-#skills {
-  padding-bottom: 100px;
+
+#tools {
+  padding: 2rem 1rem;
+  background-color: #F5E2B0;
+  color: #283C57;
 }
+
+/* #tools h1 {
+  font-size: 3rem;
+  
+} */
+
+.timeline {
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+  margin: 2rem 0;
+  list-style: none;
+  width: 50%;
+  margin-left: 20px;  
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  background: #F5E2B0;
+  border: 2px solid #283C57;
+  text-align: center;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.timeline-icon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+  width: 2px;
+  height: 2rem;
+  background: #283C57;
+}
+
+.timeline-item:last-child .timeline-icon::after {
+  display: none;
+}
+
+.timeline-content {
+  padding: 1rem;
+  background: #F5E2B0;
+  border: 2px solid #283C57;
+  border-radius: 4px;
+  flex-grow: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-content h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  flex-grow: 1;
+}
+
+.timeline-content i {
+  margin-left: 10px;
+  font-size: 1.25rem;
+  color: #283C57;
+}
+
+@media (max-width: 768px) {
+
+  #tools h1 h2{
+    text-align: left;
+  }
+
+  #blue-flower {
+    float: right;
+    max-width: 5px;
+  }
+
+  .timeline{
+    width: 100%;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .timeline-icon {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .timeline-icon::after {
+    left: 50%;
+    bottom: -2rem;
+  }
+
+  .timeline-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-content i {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.adobe-tag {
+  font-size: 0.5rem;
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+
+
 
 /* ************** */
 
@@ -593,30 +724,39 @@ root {
 
 /* Custom styles for the language dropdown menu */
 .navbar-portfolio .dropdown-menu {
-  background-color: #1c2a3b; /* Match the navbar background color */
-  color: #F5E2B0; /* Match the navbar text color */
-  border: none; /* Remove border */
+  background-color: #1c2a3b;
+  /* Match the navbar background color */
+  color: #F5E2B0;
+  /* Match the navbar text color */
+  border: none;
+  /* Remove border */
 }
 
 .navbar-portfolio .dropdown-item {
-  color: #F5E2B0; /* Match the navbar text color */
+  color: #F5E2B0;
+  /* Match the navbar text color */
 }
 
 .navbar-portfolio .dropdown-item:hover {
-  background-color: #283C57; /* Darken the background color on hover */
-  color: #FFF; /* Change text color on hover */
+  background-color: #283C57;
+  /* Darken the background color on hover */
+  color: #FFF;
+  /* Change text color on hover */
 }
 
 .navbar-portfolio .dropdown-toggle {
-  color: #F5E2B0; /* Match the navbar text color */
+  color: #F5E2B0;
+  /* Match the navbar text color */
 }
 
 .navbar-portfolio .dropdown-toggle::after {
-  color: #F5E2B0; /* Match the navbar text color */
+  color: #F5E2B0;
+  /* Match the navbar text color */
 }
 
 /* Additional styles for smaller screens */
 @media (max-width: 991.98px) {
+
   /* Remove fixed position for smaller screens */
   .navbar-portfolio {
     position: relative;
@@ -984,47 +1124,72 @@ root {
 /* PREMIERE VIDEO */
 
 .premiere-pro-section {
-  background-color: #F5E2B0; /* Background color */
-  color: #283C57; /* Text color */
-  padding: 60px 0 70px 0; /* Padding top and bottom */
-  margin-bottom: 50px; /* Bottom margin */
-  text-align: center; /* Center align text */
+  background-color: #F5E2B0;
+  /* Background color */
+  color: #283C57;
+  /* Text color */
+  padding: 60px 0 70px 0;
+  /* Padding top and bottom */
+  margin-bottom: 50px;
+  /* Bottom margin */
+  text-align: center;
+  /* Center align text */
 }
 
 .video-frame {
-  background-color: #fff; /* White background color */
-  padding: 1rem; /* Padding around the frame */
-  border-radius: 0; /* No border radius */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  margin-top: 30px; /* Top margin */
-  max-width: 850px; /* Maximum width */
-  margin-left: auto; /* Center the frame horizontally */
-  margin-right: auto; /* Center the frame horizontally */
+  background-color: #fff;
+  /* White background color */
+  padding: 1rem;
+  /* Padding around the frame */
+  border-radius: 0;
+  /* No border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Shadow effect */
+  margin-top: 30px;
+  /* Top margin */
+  max-width: 850px;
+  /* Maximum width */
+  margin-left: auto;
+  /* Center the frame horizontally */
+  margin-right: auto;
+  /* Center the frame horizontally */
 }
 
 .video-description {
-  margin-top: 1rem; /* Space above the description */
+  margin-top: 1rem;
+  /* Space above the description */
 }
 
 .video {
-  position: relative; /* Position relative for absolute positioning */
-  overflow: hidden; /* Hide overflow to prevent scrollbars */
-  padding-top: 56.25%; /* Aspect ratio (16:9) */
+  position: relative;
+  /* Position relative for absolute positioning */
+  overflow: hidden;
+  /* Hide overflow to prevent scrollbars */
+  padding-top: 56.25%;
+  /* Aspect ratio (16:9) */
 }
 
 .video iframe {
-  position: absolute; /* Position absolute */
-  top: 50%; /* Position from top */
-  left: 50%; /* Position from left */
-  transform: translate(-50%, -50%); /* Center the video */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  border-radius: 0; /* No border radius */
+  position: absolute;
+  /* Position absolute */
+  top: 50%;
+  /* Position from top */
+  left: 50%;
+  /* Position from left */
+  transform: translate(-50%, -50%);
+  /* Center the video */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  border-radius: 0;
+  /* No border radius */
 }
 
 @media (min-width: 992px) {
   .video iframe {
-      width: 800px; /* Video width for larger screens */
+    width: 800px;
+    /* Video width for larger screens */
   }
 }
 
@@ -1365,4 +1530,11 @@ root {
   word-wrap: break-word;
   padding: 20px;
   max-width: 510px;
+}
+
+@media (max-width: 767.98px) {
+  #about-box-pt {
+    max-width: 100%;
+    height: auto;
+  }
 }
