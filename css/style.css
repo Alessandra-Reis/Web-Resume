@@ -104,8 +104,6 @@ root {
 
 /* ********************* */
 
-
-
 /* ******************************************** */
 /* BUTTON SETTINGS FOR ABOUT & FIGMA PROTOTYPES */
 /* ******************************************** */
@@ -219,7 +217,7 @@ root {
   color: #F5E2B0;
 }
 
-/* Ensure the dropdown items inherit the text color */
+/* dropdown items inherit the text color */
 .dropdown-item {
   color: #F5E2B0;
 }
@@ -466,13 +464,13 @@ root {
 .timeline-content i:hover::after {
   content: "Certified";
   position: absolute;
-  top: -25px; /* Adjust this value to your liking */
+  top: -25px; 
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.9); /* Adjust background color and opacity */
-  padding: 5px 10px; /* Adjust padding */
+  background-color: rgba(255, 255, 255, 0.9); /* background color and opacity */
+  padding: 5px 10px; 
   border-radius: 5px;
-  font-size: 0.8rem; /* Adjust font size */
+  font-size: 0.8rem; 
   color: #283C57;
   z-index: 1; /* Ensure the tooltip is on top of other elements */
   font-variant: small-caps;
@@ -495,7 +493,7 @@ root {
   align-items: center; /* Align items vertically */
   padding: 2rem 0;
   margin: 2rem 0;
-  width: 100%; /* Make the timeline cover the whole width */
+  width: 100%; /* timeline cover width */
 }
 
 .skills-item {
@@ -522,7 +520,7 @@ root {
   flex-grow: 1; /* Expand to fill the remaining space */
   height: 1px;
   background-color: #F5E2B0;
-  margin: 0 10px; /* Adjust spacing */
+  margin: 0 10px; /* spacing */
 }
 
 @media (max-width: 768px) {
@@ -808,36 +806,29 @@ root {
 /* Custom styles for the language dropdown menu */
 .navbar-portfolio .dropdown-menu {
   background-color: #1c2a3b;
-  /* Match the navbar background color */
   color: #F5E2B0;
-  /* Match the navbar text color */
   border: none;
-  /* Remove border */
+  
 }
 
 .navbar-portfolio .dropdown-item {
-  color: #F5E2B0;
-  /* Match the navbar text color */
+  color: #F5E2B0;  
 }
 
 .navbar-portfolio .dropdown-item:hover {
   background-color: #283C57;
-  /* Darken the background color on hover */
-  color: #FFF;
-  /* Change text color on hover */
+  color: #FFF;  
 }
 
 .navbar-portfolio .dropdown-toggle {
   color: #F5E2B0;
-  /* Match the navbar text color */
 }
 
 .navbar-portfolio .dropdown-toggle::after {
   color: #F5E2B0;
-  /* Match the navbar text color */
 }
 
-/* Additional styles for smaller screens */
+
 @media (max-width: 991.98px) {
 
   /* Remove fixed position for smaller screens */
@@ -849,8 +840,6 @@ root {
     padding: 1rem;
   }
 }
-
-
 
 /* ****** */
 
@@ -1045,7 +1034,6 @@ root {
 
   .figma-frame-text {
     font-size: 2.5em;
-    /* Adjust as needed for smaller screens */
   }
 }
 
@@ -1055,7 +1043,6 @@ root {
   width: 90%;
   margin: 0 auto;
   gap: 20px;
-  /* Add gap between grid items */
 }
 
 #grid-figma>div {
@@ -1071,7 +1058,6 @@ root {
 
   .figma-frame-text {
     font-size: 2em;
-    /* Adjust as needed for smaller screens */
   }
 
   #bike-app-section,
@@ -1084,8 +1070,6 @@ root {
 .btn-prototypes {
   border-radius: 0%;
 }
-
-
 
 /* ************ */
 
@@ -1130,7 +1114,6 @@ root {
   text-align: left;
 }
 
-/* Media queries for smaller screens */
 @media (max-width: 1200px) {
   .adobe-frame {
     width: 20%;
@@ -1207,72 +1190,47 @@ root {
 /* PREMIERE VIDEO */
 
 .premiere-pro-section {
-  background-color: #F5E2B0;
-  /* Background color */
-  color: #283C57;
-  /* Text color */
+  background-color: #F5E2B0;  
+  color: #283C57;  
   padding: 60px 0 70px 0;
-  /* Padding top and bottom */
   margin-bottom: 50px;
-  /* Bottom margin */
   text-align: center;
-  /* Center align text */
 }
 
 .video-frame {
   background-color: #fff;
-  /* White background color */
   padding: 1rem;
-  /* Padding around the frame */
   border-radius: 0;
-  /* No border radius */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Shadow effect */
   margin-top: 30px;
-  /* Top margin */
   max-width: 850px;
-  /* Maximum width */
   margin-left: auto;
-  /* Center the frame horizontally */
   margin-right: auto;
-  /* Center the frame horizontally */
 }
 
 .video-description {
   margin-top: 1rem;
-  /* Space above the description */
 }
 
 .video {
   position: relative;
-  /* Position relative for absolute positioning */
   overflow: hidden;
-  /* Hide overflow to prevent scrollbars */
   padding-top: 56.25%;
-  /* Aspect ratio (16:9) */
 }
 
 .video iframe {
   position: absolute;
-  /* Position absolute */
   top: 50%;
-  /* Position from top */
   left: 50%;
-  /* Position from left */
   transform: translate(-50%, -50%);
-  /* Center the video */
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   border-radius: 0;
-  /* No border radius */
 }
 
 @media (min-width: 992px) {
   .video iframe {
     width: 800px;
-    /* Video width for larger screens */
   }
 }
 
@@ -1316,7 +1274,6 @@ root {
   line-height: 1.5;
 }
 
-/* Media queries for smaller screens */
 @media (max-width: 1200px) {
   .cactus-frame {
     width: 20%;
@@ -1360,7 +1317,6 @@ root {
     font-size: 2.5em;
   }
 }
-
 
 /* **** */
 /* TUEG */
@@ -1401,7 +1357,6 @@ root {
   line-height: 1.5;
 }
 
-/* Media queries for smaller screens */
 @media (max-width: 1200px) {
   .tueg-frame {
     width: 20%;
@@ -1445,7 +1400,6 @@ root {
     font-size: 2.5em;
   }
 }
-
 
 /* ***************** */
 /* PORTFOLIO SECTION */
@@ -1499,8 +1453,6 @@ root {
 
 }
 
-
-
 .btn-linkedin2 {
   color: #283C57;
   background-color: #FFF;
@@ -1542,7 +1494,6 @@ root {
 .footer-portfolio .fa-facebook {
   background: none;
   color: #FFF;
-  /* Set the color to white */
   text-decoration: none;
 }
 
@@ -1556,12 +1507,10 @@ root {
 .footer-portfolio .links {
   text-decoration: none;
   color: #FFF;
-  /* Set the color to white */
 }
 
 .footer-portfolio .links:hover {
   color: #283C57;
-  /* Change the color on hover */
 }
 
 .portfolio-links {
@@ -1575,12 +1524,10 @@ root {
 
 .portfolio-icons {
   color: #FFF;
-  /* Set the color to white */
 }
 
 .portfolio-icons:hover {
   color: #F5E2B0;
-  /* Change the color on hover */
 }
 
 #last-pic-portfolio {
